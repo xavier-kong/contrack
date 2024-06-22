@@ -1,3 +1,11 @@
+function TopBottomTextLayout({ upperText, lowerText }: { upperText: string; lowerText: string; }) {
+  return (
+    <div className="border-white border-2 rounded flex-1">
+
+    </div>
+  );
+}
+
 export default async function Home() {
   return (
     <div className="bg-slate-950 flex flex-1 h-screen flex-row">
@@ -5,8 +13,17 @@ export default async function Home() {
         <div className="flex-1">
           <p>Hello! John Doe</p>
         </div>
-        <div className="border-white border-2 rounded flex-1">
-          Events
+        <div className="border-white border-2 rounded flex-1 flex-col flex pl-5">
+          <div className="flex-1 justify-start items-end flex p-1">
+            <p className="text-2xl">
+              Events
+            </p>
+          </div>
+          <div className="flex-1 justify-start items-start flex p-1">
+            <p className="text-5xl font-bold">
+              500
+            </p>
+          </div>
         </div>
         <div className="border-white border-2 rounded flex-1">
           Flights
